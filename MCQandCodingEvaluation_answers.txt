@@ -1,0 +1,49 @@
+Q2.1 B
+Q2.2 C
+Q2.3 D
+Q2.4 A
+Q2.5 C
+Q2.6 B
+Q2.7 D
+Q2.8 A
+Q2.9 D
+Q2.10 D
+
+Q3.1
+The aggregate function is written not correct - COUNT(e.course.id) is incorrect;
+it should be COUNT(e.course_id) to count enrollments correctly.
+
+The tables students and enrollments are referenced, but not aliased
+(s and e are used in the SELECT clause but not defined):
+
+SELECT
+	s.student_id, s.student_name, COUNT(e.course.id) AS course_count
+FROM students.s
+
+Table aliases are used in the SELECT clause (s.student_id, s.student_name) but are not defined in the FROM clause
+(student_id, student_name)
+
+so it should be:
+GROUP BY
+    s.student_id, s.student_name
+
+
+Q3.2
+1. There's no explicit JOIN condition specified between students and enrollments, so it will be better
+to specify how the students and enrollments tables are joined based on the student_id column:
+
+SELECT
+    s.student_id, s.student_name, COUNT(e.course_id) AS course_count
+FROM
+    students s
+JOIN
+    enrollments e ON s.student_id = e.student_id
+
+2. USE DATE or TIMESTAMP functions for date comparisons
+3. The dataset is large, so it would be great to optimize indexes like 'students.student_id' to optimize performance.
+
+
+
+
+
+
