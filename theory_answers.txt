@@ -1,0 +1,35 @@
+Q1.1 A view in SQL acts like a virtual table made by a SELECT statement. 
+It shows data from other tables but doesn't store the data itself. This 
+sets views apart from tables, which actually store data.
+Q1.2 A pull request is a request for review and discussion of changes 
+before merging, while a merge is the actual action of integrating those 
+changes into the target branch.
+Q1.3 The else block runs when no exceptions are raised in the try block. 
+I'd use it to print a message confirming a successful operation.
+Q1.4 GET, POST, and DELETE are three commonly used API methods. The GET 
+method retrieves data from various resources, such as fetching data from a 
+database. POST sends data to the server to create or update resources. 
+DELETE removes data from a resource.
+Q1.5 In a Scrum team, there are three primary roles: Scrum Master, Product 
+Owner, and Development Team. The Product Owner represents stakeholders and 
+delivers value by prioritizing the backlog and defining features. The 
+Scrum Master facilitates the development process by removing obstacles, 
+ensuring adherence to Scrum practices, and maintaining team focus. The 
+Development Team is cross-functional and self-organizing, responsible for 
+delivering increments of the product during each Sprint.
+Q1.6 Primary Key and Foreign Key Constraints are two commonly used types 
+of database constraints. The Primary Key Constraint ensures each record in 
+a table is uniquely identified by a specific column. A Foreign Key 
+Constraint establishes a relationship between two tables, ensuring values 
+in the child table's foreign key column match values in the parent table's 
+primary key column.
+Q1.7 In Python, the break statement stops the loop right away and jumps to 
+the next code outside the loop. It's like pressing an emergency stop button when you've 
+found what you needed.The continue statement skips the rest of the current 
+loop's instructions and jumps to the next iteration of the loop. It's handy when you want to skip 
+over certain things and move on to the next item in a list or task.
+Q1.8 The code would result in a TypeError because in Python, you cannot 
+directly concatenate a string ("2") with an integer (2) using the + 
+operator. Python expects both operands of the + operator to be of the same 
+type for concatenation to work, either both strings or both integers. To 
+resolve this error we can convert the integer 2 to a string using str(2).
